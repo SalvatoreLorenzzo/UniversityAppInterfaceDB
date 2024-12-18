@@ -1,0 +1,101 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Визначення ресурсів кольорів -->
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#FFFFFFFF"/>
+    <!-- Білий фон -->
+    <SolidColorBrush x:Key="ForegroundBrush" Color="#FF000000"/>
+    <!-- Чорний текст -->
+    <SolidColorBrush x:Key="ControlBackgroundBrush" Color="#FFF0F0F0"/>
+    <!-- Світло-сірий фон контролів -->
+    <SolidColorBrush x:Key="ControlBorderBrush" Color="#FFAAAAAA"/>
+    <!-- Сірий колір рамки -->
+
+    <!-- Стиль для Window -->
+    <Style TargetType="Window">
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+    </Style>
+
+    <!-- Стиль для UserControl -->
+    <Style TargetType="UserControl">
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+    </Style>
+
+    <!-- Стиль для TextBox -->
+    <Style TargetType="TextBox">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ControlBorderBrush}"/>
+        <!-- Збільшення висоти текстового поля -->
+        <Setter Property="Height" Value="30"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Стиль для ComboBox -->
+    <Style TargetType="ComboBox">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ControlBorderBrush}"/>
+        <!-- Збільшення висоти комбобоксу -->
+        <Setter Property="Height" Value="30"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Стиль для ListBox -->
+    <Style TargetType="ListBox">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ControlBorderBrush}"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Стиль для TextBlock -->
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Стиль для DatePicker -->
+    <Style TargetType="DatePicker">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ControlBorderBrush}"/>
+        <!-- Збільшення висоти -->
+        <Setter Property="Height" Value="30"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Стиль для Button -->
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ControlBorderBrush}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    <!-- Стилі для Menu та MenuItem -->
+    <Style TargetType="Menu">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <!-- Збільшення висоти меню -->
+        <Setter Property="Height" Value="30"/>
+    </Style>
+
+    <Style TargetType="MenuItem">
+        <Setter Property="Background" Value="{StaticResource ControlBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <!-- Збільшення розміру шрифту -->
+        <Setter Property="FontSize" Value="14"/>
+        <!-- Збільшення висоти пунктів меню -->
+        <Setter Property="Height" Value="30"/>
+    </Style>
+</ResourceDictionary>
